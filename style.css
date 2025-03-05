@@ -1,0 +1,124 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #323131;
+  margin: 0;
+}
+/*personal information and call to action*/
+.tageline {
+  background-image: url(/images/background-image.png);
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  padding: 2rem;
+}
+
+/* Animated Text Area */
+#animated-text {
+  position: absolute;
+  line-height: 30px;
+  padding: 2rem;
+  white-space: pre-line; /* Ensures proper new lines */
+  color: #ff7f50;
+}
+
+/* Code-Like Styling */
+#animated-text h1 {
+  font-size: 1.4rem;
+  color: #ff7f50;
+}
+
+#animated-text h2 {
+  font-size: 1.2rem;
+  color: #1e90ff;
+}
+
+#animated-text h3 {
+  color: #f9e04f;
+  font-size: 1.1em;
+}
+
+/* Contact Info Styling */
+.contact-info {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+#animated-text {
+  animation: typing 3s linear steps(40, end) infinite alternate;
+}
+
+/*start of the project teaser card*/
+.project-teaser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.teaser-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 40px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgb(62, 55, 63);
+  text-align: center;
+  width: 320px;
+}
+
+.teaser-card img {
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(249, 136, 252, 0.6);
+  padding: 10px;
+}
+
+.teaser-card h1 {
+  font-size: 1.3rem;
+  margin: 15px 0 5px;
+  color: #af49af;
+  border: none;
+}
+
+.teaser-card p {
+  font-size: 1rem;
+  color: #e7e7e7;
+}
+
+.teaser-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #13316d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+.teaser-card a:hover {
+  background-color: #90a9e0;
+}
