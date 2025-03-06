@@ -1,23 +1,61 @@
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-const phrases = [
-  "const futureReimagined =${Imagination} ${Development} = A Future Reimagined",
-  "console.log(futureReimagined);",
+const textArray = [
+  { text: "building clean,", id: "blue" },
+  { text: "efficient,", id: "yellow" },
+  { text: "innovative digital solutions,", id: "green" },
+  { text: "<br>", id: "" }, 
+  { text: "—one line of code at a time.", id: "tag" }
 ];
 
-const el = document.getElementById("animated-text");
+const animatedText = document.getElementById("animated-text");
 
-let sleepTime = 100;
-let curPhraseIndex = 0;
+let wordIndex = 0;
+let charIndex = 0;
+let speed = 100; // Typing speed in milliseconds
+let pauseTime = 2000; // Pause before restarting
 
-const writeLoop = async () => {
-  while (true) {
-    let curWord = phrases[curPhraseIndex];
-    for (let i = 0; i < curWord.length; i++) {
-      el.innerText = curWord.substring(0, i);
+function typeText() {
+  if (wordIndex < textArray.length) {
+    let currentWord = textArray[wordIndex];
+
+    if (currentWord.text === "<br>") {
+      animatedText.innerHTML += "<br>"; // Add line break
+      wordIndex++;
+      setTimeout(typeText, speed);
+    } else {
+      let spanTag = `<span id="${currentWord.id}">${currentWord.text.slice(0, charIndex + 1)}</span>`;
+
+      // Clear previous text and re-add each typed character
+      animatedText.innerHTML = textArray
+        .slice(0, wordIndex)
+        .map(word => `<span id="${word.id}">${word.text}</span>`)
+        .join(" ") + " " + spanTag;
+
+      charIndex++;
+
+      if (charIndex < currentWord.text.length) {
+        setTimeout(typeText, speed);
+      } else {
+        charIndex = 0;
+        wordIndex++;
+        setTimeout(typeText, speed);
+      }
     }
+  } else {
+    setTimeout(resetAnimation, pauseTime);
   }
-};
-writeLoop();
+}
+
+function resetAnimation() {
+  animatedText.innerHTML = "";
+  wordIndex = 0;
+  charIndex = 0;
+  setTimeout(typeText, 500);
+}
+
+window.onload = typeText;
+
+document.querySelectorAll("a" ).forEach(link => {
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+});
+
