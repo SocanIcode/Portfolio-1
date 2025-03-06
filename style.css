@@ -4,37 +4,54 @@ body {
   margin: 0;
 }
 /*personal information and call to action*/
+
 .tageline {
   background-image: url(/images/background-image.png);
   background-size: cover;
   height: 50vh;
   position: relative;
+  color: #ebeae7;
   padding: 2rem;
 }
+.wave {
+  display: inline-block;
+  font-size: larger;
+  animation: wave-animation 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(10deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
 
 /* Animated Text Area */
 #animated-text {
-  position: absolute;
-  line-height: 30px;
-  padding: 2rem;
-  white-space: pre-line; /* Ensures proper new lines */
-  color: #ff7f50;
+  font-size: 1.3rem;
+  font-family: monospace;
+  font-weight: 600;
+  white-space: pre-line; 
 }
 
-/* Code-Like Styling */
-#animated-text h1 {
-  font-size: 1.4rem;
-  color: #ff7f50;
+ #blue{
+  color:#92b0ec;
+}
+#yellow{
+  color: #f07b5d;
 }
 
-#animated-text h2 {
-  font-size: 1.2rem;
-  color: #1e90ff;
+#green{
+  color: #44a866;
 }
-
-#animated-text h3 {
+#tag{
+  font-size: 1.5rem;
   color: #f9e04f;
-  font-size: 1.1em;
+  
 }
 
 /* Contact Info Styling */
@@ -50,19 +67,6 @@ body {
   color: #fff;
 }
 
-/* Typing Animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80%;
-  }
-}
-
-#animated-text {
-  animation: typing 3s linear steps(40, end) infinite alternate;
-}
 
 /*start of the project teaser card*/
 .project-teaser {
