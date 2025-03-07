@@ -1,10 +1,10 @@
-## Hi there!👋 Welcome to My page
+## Hi there!👋 [ Welcome to My page](https://github.com/SocanIcode/Portfolio-1)
 
 ![blog image card project exame 1, retrived from profilepage card](/images/background-image.png)
 
 ## About Me
 
-Aspiring **Front-End Developer** skilled in HTML, CSS, JavaScript, and APIs, with a passion for creating seamless user experiences. Transitioning from a 12+ year career in Marketing Automation, having worked with global companies. Seeking opportunities to apply my expertise in both development and automation.
+Aspiring **Front-End Developer** skilled in HTML, CSS, JavaScript, and APIs, with a passion for creating  userfiendly experiences. Transitioning from a 10+ years career in Accouting and Marketing, having worked with global companies. Seeking opportunities to apply my expertise in both development and marketing.
 
 ## Programming languages and frameworks
 
