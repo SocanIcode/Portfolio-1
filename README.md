@@ -4,7 +4,7 @@
 
 ## About Me
 
-Experienced **Marketing Automation Specialist** with **12+ years** in global companies, now transitioning into **Front-End Development**. Passionate about creating seamless user experiences with **HTML, CSS, JavaScript, and APIs**. Seeking opportunities to blend **tech & automation** expertise for innovative digital solutions.
+Aspiring **Front-End Developer** skilled in HTML, CSS, JavaScript, and APIs, with a passion for creating seamless user experiences. Transitioning from a 12+ year career in Marketing Automation, having worked with global companies. Seeking opportunities to apply my expertise in both development and automation.
 
 ## Programming languages and frameworks
 
