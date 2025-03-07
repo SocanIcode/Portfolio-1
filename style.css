@@ -3,7 +3,7 @@ body {
   background-color: #323131;
   margin: 0;
 }
-/*personal information and call to action*/
+/*personal information start here*/
 
 .tageline {
   background-image: url(/images/background-image.png);
@@ -11,7 +11,7 @@ body {
   height: 50vh;
   position: relative;
   color: #ebeae7;
-  padding: 2rem;
+  padding: 3rem;
 }
 .wave {
   display: inline-block;
@@ -21,40 +21,48 @@ body {
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(15deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(10deg); }
-  80% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-
-/* Animated Text Area */
 #animated-text {
   font-size: 1.3rem;
   font-family: monospace;
   font-weight: 600;
-  white-space: pre-line; 
+  white-space: pre-line;
 }
 
- #blue{
-  color:#92b0ec;
+#blue {
+  color: #92b0ec;
 }
-#yellow{
+#yellow {
   color: #f07b5d;
 }
 
-#green{
+#green {
   color: #44a866;
 }
-#tag{
+#tag {
   font-size: 1.5rem;
   color: #f9e04f;
-  
 }
 
-/* Contact Info Styling */
 .contact-info {
   position: absolute;
   right: 50px;
@@ -66,7 +74,6 @@ body {
   border-radius: 10px;
   color: #fff;
 }
-
 
 /*start of the project teaser card*/
 .project-teaser {
@@ -99,7 +106,7 @@ body {
 }
 
 .teaser-card h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 15px 0 5px;
   color: #af49af;
   border: none;
@@ -108,6 +115,10 @@ body {
 .teaser-card p {
   font-size: 1rem;
   color: #e7e7e7;
+  text-align: justify;
+}
+.teaser-card .bold {
+  font-weight: bold;
 }
 
 .teaser-card a {
@@ -125,4 +136,13 @@ body {
 
 .teaser-card a:hover {
   background-color: #90a9e0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  background-color: #262626;
+  color: #fff;
+  font-size: 12px;
+  border-top: 1px solid #56384d;
 }
